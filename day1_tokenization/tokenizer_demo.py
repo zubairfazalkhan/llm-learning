@@ -17,5 +17,4 @@ print("Tokens:", tokens)
 with torch.no_grad():
     outputs = model(**inputs)
     embeddings = outputs.last_hidden_state
-
 print("Embeddings shape:", embeddings.shape)
