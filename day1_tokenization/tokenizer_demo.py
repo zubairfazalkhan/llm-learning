@@ -6,7 +6,9 @@ tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 model = GPT2Model.from_pretrained("gpt2")
 
 # Input text
-text = "Transformers are powerful models."
+# text = "Transformers are powerful models."
+text = input("Enter a sentence to tokenize and embed: ")
+
 
 # Tokenize the input
 inputs = tokenizer(text, return_tensors="pt")
